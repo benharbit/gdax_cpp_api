@@ -13,7 +13,7 @@ To run program:
 
 
 
-#main.cpp
+main.cpp
 '''
 #include "client_gdax.h"
 
