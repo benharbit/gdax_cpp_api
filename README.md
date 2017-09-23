@@ -1,4 +1,4 @@
-# GDAX C++ REST Library 
+# GDAX C++ REST Library (unofficial)
 
 This library was implimented in C++ on Ubuntu 14.
 
@@ -14,7 +14,7 @@ To run program:
 
 
 #main.cpp
-
+'''
 #include "client_gdax.h"
 
 int main(int argc, const char *argv[])
@@ -58,7 +58,7 @@ int main(int argc, const char *argv[])
 	return 0;
 }
 
-
+'''
 
 ## License
 
