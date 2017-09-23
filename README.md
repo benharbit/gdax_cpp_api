@@ -4,7 +4,8 @@ This library was implimented in C++ on Ubuntu 14.
 
 ## Getting Started
 
-How to build a sample program
+How to build the sample program:
+
  g++ -o gdax_rest_program  main.cpp client_gdax.cpp -std=c++11 -lcurl -lcrypto -lssl -lcryptopp -lboost_chrono -lboost_date_time
 
 To run program:
@@ -26,7 +27,7 @@ int main(int argc, const char *argv[])
 	std::string pass_phrase("Insert your passphrase here");
 
 	std::cout<<std::endl<<"Start GDAX rest sample program"<<std::endl<<std::endl;
-	std::cout<<"To place then cancel a live buy order at $100 per BTC set variable do_place_order = true"<<std::endl<<std::endl;
+	std::cout<<"To place then cancel a live BTC buy order at $100 per BTC set variable do_place_order = true"<<std::endl<<std::endl;
 	
 	bool do_place_order = false;
 	
