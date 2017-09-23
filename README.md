@@ -15,7 +15,7 @@ To run program:
 
 main.cpp
 
-''' c++
+``` c++
 
 #include "client_gdax.h"
 
@@ -60,7 +60,7 @@ int main(int argc, const char *argv[])
 	return 0;
 }
 
-'''
+```
 
 ## License
 
