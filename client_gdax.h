@@ -5,9 +5,7 @@
 
 #include <vector>
 #include <string>
-//#include "orderbook.h"
 
-//#include "parameters.hpp"
 
 
 #include <boost/version.hpp>
@@ -99,22 +97,22 @@ class client_gdax{
 		std::string APIurl;
 		std::string key;
 		std::string secret;
-        std::string passphrase;
-        CURL *curl;
-        CURLcode res;
+       		std::string passphrase;
+        	CURL *curl;
+        	CURLcode res;
 		
 		client_gdax(std::string key,std::string secret,std::string passphrase);
 		client_gdax();
 		~client_gdax();
 		
-        std::string sign_data(const char *data, std::size_t data_size,std::string my_key) ;
-        std::string returnTradeHistory(mkt_symbol currencyPair);
-        std::map<mkt_symbol,std::string> trade_hist_pagination;
+		std::string sign_data(const char *data, std::size_t data_size,std::string my_key) ;
+		std::string returnTradeHistory(mkt_symbol currencyPair);
+		std::map<mkt_symbol,std::string> trade_hist_pagination;
 
 		std::string returnAvailableAccountBalances();
-        int returnOrderTrades_vec(order& o1,std::string& err_str ,std::string input_str = "-99") ;
-        std::string move(order& o1, double price,double amount = 0);
-        int move_vec(order& o1, order& new_order,double price,std::string& err_str,double amount = -99 ,std::string input_str="-99" );
+		int returnOrderTrades_vec(order& o1,std::string& err_str ,std::string input_str = "-99") ;
+		std::string move(order& o1, double price,double amount = 0);
+		int move_vec(order& o1, order& new_order,double price,std::string& err_str,double amount = -99 ,std::string input_str="-99" );
 
       
 		int getBase64(const std::string &content, std::string &encoded);
