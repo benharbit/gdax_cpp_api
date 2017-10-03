@@ -5,9 +5,6 @@
 
 #include <vector>
 #include <string>
-
-
-
 #include <boost/version.hpp>
 #include <iostream>
 #include <memory>
@@ -30,26 +27,22 @@
 
 
   struct mkt_symbol{
-	mkt_symbol(const std::string& currency,const std::string&  base,const std::string& exchange):
-	currency(currency),
-	base(base),
-	exchange(exchange){
-		
-	};
-	mkt_symbol(){
-		
-	};
 
 	std::string currency;
 	std::string base;
 	std::string exchange;
+
+	mkt_symbol(const std::string& currency,const std::string&  base,const std::string& exchange):
+	currency(currency),
+	base(base),
+	exchange(exchange){};
+
+	mkt_symbol(){};
+
+	
 	
 	bool operator<(const mkt_symbol& rhs) const{
-		//int val1 = str_to_compare.compare(rhs.str_to_compare);
-		//if (val1<0)
-			return true;
-		//else
-		//	return false;
+		return true;
 	}
 	
 	
