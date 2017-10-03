@@ -26,7 +26,7 @@
 #include <cryptopp/base64.h>
 
 
-  struct mkt_symbol{
+struct mkt_symbol{
 
 	std::string currency;
 	std::string base;
@@ -80,7 +80,7 @@ struct f_data{
             message = message1;
         };
 
-    };
+};
 
 
 
